@@ -95,7 +95,7 @@ module TE2AK
     def run(input, output)
       if File.exist?(input)
         te = Plist::parse_xml File.open(input).read
-        ahk = te['snippetsTE2']
+        ahk = te['snippetPlists']
 
         ahk.each do |a|
           script = false
